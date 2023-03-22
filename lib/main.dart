@@ -37,7 +37,55 @@ class myApp extends StatelessWidget {
                     fontFamily: 'RobotoCondensed',
                     fontSize: 30.0,
                     color: Colors.white),
-              )
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
+                padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 13.0),
+                color: Colors.white,
+                alignment: Alignment.center,
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.phone,
+                      color: Colors.teal[500],
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      '987654321',
+                      style: TextStyle(
+                          fontFamily: 'RobotoCondensed',
+                          color: Colors.teal[600],
+                          fontSize: 20.0),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(vertical: 7.0, horizontal: 30.0),
+                padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 13.0),
+                color: Colors.white,
+                alignment: Alignment.center,
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.mail,
+                      color: Colors.teal[500],
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      'me@mail.com',
+                      style: TextStyle(
+                          fontFamily: 'RobotoCondensed',
+                          color: Colors.teal[600],
+                          fontSize: 20.0),
+                    )
+                  ],
+                ),
+              ),
             ],
           ),
         ),
