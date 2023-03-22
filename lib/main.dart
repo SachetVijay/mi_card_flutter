@@ -15,6 +15,9 @@ class myApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             children: [
+              SizedBox(
+                height: 170.0,
+              ),
               CircleAvatar(
                 radius: 55.0,
                 backgroundColor: Colors.black,
@@ -38,52 +41,47 @@ class myApp extends StatelessWidget {
                     fontSize: 30.0,
                     color: Colors.white),
               ),
-              Container(
-                margin: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
-                padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 13.0),
-                color: Colors.white,
-                alignment: Alignment.center,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      color: Colors.teal[500],
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '987654321',
-                      style: TextStyle(
-                          fontFamily: 'RobotoCondensed',
-                          color: Colors.teal[600],
-                          fontSize: 20.0),
-                    )
-                  ],
+              SizedBox(
+                width: 150.0,
+                height: 17.0,
+                child: Divider(
+                  thickness: 2.5,
+                  color: Colors.teal[200],
                 ),
               ),
-              Container(
-                margin: EdgeInsets.symmetric(vertical: 7.0, horizontal: 30.0),
-                padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 13.0),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 30.0, horizontal: 30.0),
                 color: Colors.white,
-                alignment: Alignment.center,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.mail,
-                      color: Colors.teal[500],
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal[700],
+                  ),
+                  title: Text(
+                    '987654321',
+                    style: TextStyle(
+                      fontFamily: 'RobotoCondensed',
+                      fontSize: 20.0,
+                      color: Colors.teal[600],
                     ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      'me@mail.com',
-                      style: TextStyle(
-                          fontFamily: 'RobotoCondensed',
-                          color: Colors.teal[600],
-                          fontSize: 20.0),
-                    )
-                  ],
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 0.0, horizontal: 30.0),
+                color: Colors.white,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.mail,
+                    color: Colors.teal[500],
+                  ),
+                  title: Text(
+                    'me@mail.com',
+                    style: TextStyle(
+                        fontFamily: 'RobotoCondensed',
+                        color: Colors.teal[600],
+                        fontSize: 20.0),
+                  ),
                 ),
               ),
             ],
